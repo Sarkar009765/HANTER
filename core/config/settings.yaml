@@ -1,0 +1,85 @@
+app:
+  name: "HANTER"
+  version: "1.0.0"
+  debug: false
+  log_level: "info"
+
+server:
+  host: "127.0.0.1"
+  port: 8000
+  cors_origins:
+    - "http://localhost:5173"
+    - "http://localhost:1420"
+    - "tauri://localhost"
+
+llm:
+  primary:
+    provider: "groq"
+    model: "llama-3.1-8b-instant"
+    api_key_env: "GROQ_API_KEY"
+    max_tokens: 4096
+    temperature: 0.7
+    rate_limit_per_minute: 20
+  fallback:
+    provider: "together"
+    model: "qwen-2.5-7b-instruct"
+    api_key_env: "TOGETHER_API_KEY"
+  local:
+    provider: "ollama"
+    model: "tinyllama"
+    base_url: "http://localhost:11434"
+  embeddings:
+    model: "all-MiniLM-L6-v2"
+    dimension: 384
+
+memory:
+  db_path: "data/hanter.db"
+  vector_db_path: "data/chromadb"
+  conversation_buffer_size: 10
+  max_working_memory_mb: 50
+  short_term_retention_days: 7
+  long_term_min_importance: 5
+
+agents:
+  max_active: 2
+  default_timeout_seconds: 300
+  max_retries: 3
+
+skills:
+  max_ram_mb: 400
+  idle_timeout_seconds: 300
+  max_active: 2
+
+security:
+  allowed_commands:
+    - "git"
+    - "npm"
+    - "yarn"
+    - "pnpm"
+    - "python"
+    - "pip"
+    - "npx"
+    - "vercel"
+    - "netlify"
+    - "docker"
+  blocked_patterns:
+    - "rm -rf"
+    - "sudo"
+    - "chmod 777"
+    - "mkfs"
+    - "dd if"
+    - "> /dev/"
+  allowed_fs_roots:
+    - "~/hanterProjects"
+    - "~/Downloads"
+    - "~/Documents"
+  sandbox_timeout_seconds: 300
+  output_limit_bytes: 1048576
+
+optimization:
+  ram_threshold_mb: 1800
+  emergency_threshold_mb: 200
+  metrics_interval_seconds: 5
+  auto_unload_idle_skills: true
+  compressed_embeddings: true
+  stream_llm_responses: true

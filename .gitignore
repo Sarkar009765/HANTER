@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.env
+*.so
+
+# Node
+node_modules/
+dist/
+.cache/
+
+# Rust
+target/
+
+# BRO-AI
+data/
+*.db
+chromadb/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+keys.enc
+.env.local

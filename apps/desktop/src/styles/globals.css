@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-tertiary: #1a1a25;
+    --bg-glass: rgba(255, 255, 255, 0.03);
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0b0;
+    --text-muted: #5a5a6a;
+    --text-accent: #00f0ff;
+    --accent-cyan: #00f0ff;
+    --accent-pink: #ff006e;
+    --accent-green: #00ff88;
+    --accent-yellow: #f0a000;
+    --accent-red: #ff3333;
+    --border-subtle: rgba(255, 255, 255, 0.1);
+    --border-active: rgba(0, 240, 255, 0.5);
+    --glow-cyan: 0 0 20px rgba(0, 240, 255, 0.2);
+    --glow-pink: 0 0 20px rgba(255, 0, 110, 0.2);
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", "Fira Code", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
+
+::selection {
+    background: rgba(0, 240, 255, 0.3);
+    color: white;
+}

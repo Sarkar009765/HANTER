@@ -1,0 +1,71 @@
+agents:
+  dev_agent:
+    name: "DevAgent"
+    description: "Full-stack development agent - code generation, debugging, deployment"
+    version: "1.0.0"
+    ram_budget_mb: 100
+    required_skills:
+      - "dev"
+    capabilities:
+      - "code_generation"
+      - "debugging"
+      - "project_scaffolding"
+      - "git_operations"
+      - "deployment"
+    default_timeout: 300
+
+  social_agent:
+    name: "SocialAgent"
+    description: "Social media management agent - content creation, scheduling, analytics"
+    version: "1.0.0"
+    ram_budget_mb: 80
+    required_skills:
+      - "social"
+    capabilities:
+      - "content_creation"
+      - "scheduling"
+      - "analytics"
+      - "engagement"
+    default_timeout: 120
+
+  web_agent:
+    name: "WebAgent"
+    description: "Web automation agent - scraping, monitoring, research"
+    version: "1.0.0"
+    ram_budget_mb: 60
+    required_skills:
+      - "web"
+    capabilities:
+      - "web_scraping"
+      - "url_monitoring"
+      - "web_research"
+      - "content_archiving"
+    default_timeout: 180
+
+  file_agent:
+    name: "FileAgent"
+    description: "File management agent - organize, search, convert, sync"
+    version: "1.0.0"
+    ram_budget_mb: 40
+    required_skills:
+      - "file"
+    capabilities:
+      - "file_organization"
+      - "file_search"
+      - "format_conversion"
+      - "sync_backup"
+    default_timeout: 120
+
+  sys_agent:
+    name: "SysAgent"
+    description: "System automation agent - maintenance, monitoring, optimization"
+    version: "1.0.0"
+    ram_budget_mb: 50
+    required_skills:
+      - "system"
+    capabilities:
+      - "system_monitoring"
+      - "task_automation"
+      - "cleanup"
+      - "optimization"
+    default_timeout: 120

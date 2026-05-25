@@ -1,0 +1,18 @@
+tasks:
+  - id: sample_task_1
+    description: "Create a React project"
+    intent: "CODE_GENERATION"
+    expected_agent: "dev_agent"
+    expected_tasks: 2
+
+  - id: sample_task_2
+    description: "Post on Twitter about the new launch"
+    intent: "SOCIAL_MEDIA"
+    expected_agent: "social_agent"
+    expected_tasks: 2
+
+  - id: sample_task_3
+    description: "Scrape Hacker News for AI articles"
+    intent: "WEB_RESEARCH"
+    expected_agent: "web_agent"
+    expected_tasks: 2

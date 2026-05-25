@@ -1,0 +1,83 @@
+skills:
+  dev:
+    name: "dev"
+    description: "Full-stack development: code generation, debugging, deployment"
+    version: "1.0.0"
+    category: "dev"
+    ram_usage_mb: 100
+    cpu_intensity: "medium"
+    network_required: true
+    supported_tasks:
+      - "generate_code"
+      - "debug"
+      - "refactor"
+      - "scaffold_project"
+      - "git_commit"
+      - "git_push"
+      - "deploy_vercel"
+      - "deploy_netlify"
+      - "run_tests"
+      - "fix_lint"
+
+  social:
+    name: "social"
+    description: "Social media management: content creation, scheduling, analytics"
+    version: "1.0.0"
+    category: "social"
+    ram_usage_mb: 80
+    cpu_intensity: "low"
+    network_required: true
+    supported_tasks:
+      - "create_tweet"
+      - "create_post"
+      - "schedule_content"
+      - "analyze_engagement"
+      - "reply_mentions"
+      - "generate_hashtags"
+
+  web:
+    name: "web"
+    description: "Web automation: scraping, monitoring, research"
+    version: "1.0.0"
+    category: "web"
+    ram_usage_mb: 60
+    cpu_intensity: "medium"
+    network_required: true
+    supported_tasks:
+      - "scrape_page"
+      - "monitor_url"
+      - "search_web"
+      - "summarize_article"
+      - "download_file"
+      - "check_broken_links"
+
+  file:
+    name: "file"
+    description: "File operations: organize, search, convert, sync"
+    version: "1.0.0"
+    category: "file"
+    ram_usage_mb: 40
+    cpu_intensity: "low"
+    network_required: false
+    supported_tasks:
+      - "organize_folder"
+      - "search_files"
+      - "convert_format"
+      - "compress_files"
+      - "sync_folder"
+      - "clean_duplicates"
+
+  system:
+    name: "system"
+    description: "System operations: automation, monitoring, optimization"
+    version: "1.0.0"
+    category: "system"
+    ram_usage_mb: 50
+    cpu_intensity: "low"
+    network_required: false
+    supported_tasks:
+      - "run_automation"
+      - "monitor_system"
+      - "clean_temp_files"
+      - "optimize_performance"
+      - "manage_processes"

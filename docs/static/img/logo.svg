@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#12121a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff"/>
+      <stop offset="100%" style="stop-color:#ff006e"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#ff006e;stop-opacity:0.1"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" fill="url(#bgGrad)"/>
+  <!-- Hexagonal grid pattern -->
+  <g opacity="0.05" stroke="#00f0ff" stroke-width="0.5" fill="none">
+    <polygon points="256,60 320,90 320,150 256,180 192,150 192,90"/>
+    <polygon points="256,180 320,210 320,270 256,300 192,270 192,210"/>
+    <polygon points="256,300 320,330 320,390 256,420 192,390 192,330"/>
+  </g>
+  <!-- Outer glow ring -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="url(#glowGrad)" stroke-width="1" opacity="0.4"/>
+  <circle cx="256" cy="256" r="150" fill="none" stroke="url(#glowGrad)" stroke-width="0.5" opacity="0.3"/>
+  <!-- Main H letter form -->
+  <g filter="url(#glow)">
+    <!-- Left vertical -->
+    <rect x="155" y="150" width="28" height="212" rx="14" fill="url(#accentGrad)" opacity="0.9"/>
+    <!-- Right vertical -->
+    <rect x="329" y="150" width="28" height="212" rx="14" fill="url(#accentGrad)" opacity="0.9"/>
+    <!-- Cross bar -->
+    <rect x="155" y="230" width="202" height="28" rx="14" fill="url(#accentGrad)" opacity="0.9"/>
+  </g>
+  <!-- AI nodes orbiting -->
+  <g filter="url(#softGlow)">
+    <circle cx="256" cy="130" r="6" fill="#00f0ff" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="370" cy="200" r="4" fill="#ff006e" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="370" cy="320" r="4" fill="#00ff88" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="256" cy="390" r="5" fill="#a855f7" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="142" cy="200" r="4" fill="#f0a000" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <!-- Connecting lines between nodes -->
+  <g stroke="#00f0ff" stroke-width="0.5" opacity="0.15">
+    <line x1="256" y1="130" x2="370" y2="200"/>
+    <line x1="370" y1="200" x2="370" y2="320"/>
+    <line x1="370" y1="320" x2="256" y2="390"/>
+    <line x1="256" y1="390" x2="142" y2="320"/>
+    <line x1="142" y1="320" x2="142" y2="200"/>
+    <line x1="142" y1="200" x2="256" y2="130"/>
+  </g>
+  <!-- Text: HANTER -->
+  <text x="256" y="485" text-anchor="middle" font-family="'Inter','Segoe UI',sans-serif" font-size="36" font-weight="700" fill="#ffffff" letter-spacing="8">
+    HANTER
+  </text>
+</svg>
