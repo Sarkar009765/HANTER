@@ -1,0 +1,39 @@
+# Auto-detect text files
+* text=auto
+
+# Source
+*.py text diff=python
+*.ts text diff=typescript
+*.tsx text diff=typescript
+*.js text diff=javascript
+*.jsx text diff=javascript
+*.json text
+*.yaml text
+*.yml text
+*.css text
+*.html text
+*.md text
+
+# Shell scripts
+*.sh text eol=lf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Rust
+*.rs text
+*.toml text
+
+# Binaries
+*.png binary
+*.ico binary
+*.icns binary
+*.svg text
+
+# Build artifacts
+target/ -diff
+__pycache__/ -diff
+node_modules/ -diff
+dist/ -diff
+.venv/ -diff
+venv/ -diff
+data/ -diff

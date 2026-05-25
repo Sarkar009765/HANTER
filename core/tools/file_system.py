@@ -12,7 +12,7 @@ from utils.logger import logger
 class SecureFileSystem:
     def __init__(self):
         self.allowed_roots = [
-            str(Path("~/BroAIProjects").expanduser().resolve()),
+            str(Path("~/HANTERProjects").expanduser().resolve()),
             str(Path("~/Downloads").expanduser().resolve()),
             str(Path("~/Documents").expanduser().resolve()),
         ]

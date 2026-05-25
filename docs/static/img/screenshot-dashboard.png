@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#12121a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="180" height="720" fill="#12121a" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="12" y="12" width="156" height="36" rx="8" fill="rgba(0,240,255,0.1)" stroke="rgba(0,240,255,0.3)" stroke-width="1"/>
+  <text x="90" y="36" text-anchor="middle" fill="#00f0ff" font-family="monospace" font-size="14" font-weight="bold">HANTER</text>
+  <!-- Nav items -->
+  <rect x="12" y="60" width="156" height="32" rx="6" fill="rgba(0,240,255,0.1)" stroke="rgba(0,240,255,0.3)" stroke-width="1"/>
+  <text x="30" y="80" fill="#00f0ff" font-family="sans-serif" font-size="12">Dashboard</text>
+  <rect x="12" y="96" width="156" height="32" rx="6" fill="transparent"/>
+  <text x="30" y="116" fill="#a0a0b0" font-family="sans-serif" font-size="12">Agents</text>
+  <rect x="12" y="132" width="156" height="32" rx="6" fill="transparent"/>
+  <text x="30" y="152" fill="#a0a0b0" font-family="sans-serif" font-size="12">Memory</text>
+  <rect x="12" y="168" width="156" height="32" rx="6" fill="transparent"/>
+  <text x="30" y="188" fill="#a0a0b0" font-family="sans-serif" font-size="12">Config</text>
+  <!-- Top bar -->
+  <rect x="180" y="0" width="1100" height="40" fill="rgba(18,18,26,0.8)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="200" y="26" fill="#a0a0b0" font-family="monospace" font-size="12">RAM: 650MB / 2048MB</text>
+  <circle cx="1040" cy="20" r="4" fill="#00ff88"/>
+  <text x="1050" y="24" fill="#00ff88" font-family="monospace" font-size="11">Online</text>
+  <!-- Neural graph area -->
+  <rect x="192" y="52" width="1076" height="240" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <!-- Simulated neural nodes -->
+  <circle cx="350" cy="170" r="8" fill="#00f0ff" opacity="0.8"/>
+  <circle cx="480" cy="130" r="6" fill="#ff006e" opacity="0.6"/>
+  <circle cx="480" cy="210" r="6" fill="#f0a000" opacity="0.6"/>
+  <circle cx="600" cy="160" r="7" fill="#00ff88" opacity="0.7"/>
+  <circle cx="700" cy="140" r="5" fill="#a855f7" opacity="0.5"/>
+  <circle cx="700" cy="200" r="5" fill="#00f0ff" opacity="0.5"/>
+  <line x1="350" y1="170" x2="480" y2="130" stroke="#00f0ff" stroke-width="1" opacity="0.3"/>
+  <line x1="480" y1="130" x2="600" y2="160" stroke="#ff006e" stroke-width="1" opacity="0.3"/>
+  <line x1="480" y1="210" x2="600" y2="160" stroke="#f0a000" stroke-width="1" opacity="0.3"/>
+  <line x1="350" y1="170" x2="480" y2="210" stroke="#00f0ff" stroke-width="1" opacity="0.3"/>
+  <line x1="600" y1="160" x2="700" y2="140" stroke="#a855f7" stroke-width="1" opacity="0.3"/>
+  <line x1="600" y1="160" x2="700" y2="200" stroke="#00ff88" stroke-width="1" opacity="0.3"/>
+  <text x="350" y="195" fill="#00f0ff" font-family="monospace" font-size="10">Dev</text>
+  <text x="480" y="118" fill="#ff006e" font-family="monospace" font-size="10">Social</text>
+  <text x="480" y="228" fill="#f0a000" font-family="monospace" font-size="10">Web</text>
+  <text x="600" y="180" fill="#00ff88" font-family="monospace" font-size="10">File</text>
+  <text x="700" y="128" fill="#a855f7" font-family="monospace" font-size="10">Sys</text>
+  <!-- 3 cards -->
+  <rect x="192" y="304" width="348" height="130" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="210" y="326" fill="#00f0ff" font-family="sans-serif" font-size="12" font-weight="bold">Active Tasks</text>
+  <rect x="210" y="340" width="300" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+  <rect x="210" y="340" width="200" height="6" rx="3" fill="#00f0ff"/>
+  <text x="520" y="345" fill="#a0a0b0" font-family="monospace" font-size="10">67%</text>
+  <text x="210" y="365" fill="#a0a0b0" font-family="sans-serif" font-size="11">Deploy API to Vercel</text>
+  <rect x="552" y="304" width="348" height="130" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="570" y="326" fill="#ff006e" font-family="sans-serif" font-size="12" font-weight="bold">Agents Status</text>
+  <circle cx="570" cy="345" r="3" fill="#00ff88"/><text x="580" y="348" fill="#a0a0b0" font-family="sans-serif" font-size="11">DevAgent — Running</text>
+  <circle cx="570" cy="363" r="3" fill="#f0a000"/><text x="580" y="366" fill="#a0a0b0" font-family="sans-serif" font-size="11">SocialAgent — Standby</text>
+  <circle cx="570" cy="381" r="3" fill="#a0a0b0"/><text x="580" y="384" fill="#a0a0b0" font-family="sans-serif" font-size="11">WebAgent — Idle</text>
+  <rect x="912" y="304" width="348" height="130" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="930" y="326" fill="#00ff88" font-family="sans-serif" font-size="12" font-weight="bold">Web Monitor</text>
+  <text x="930" y="348" fill="#a0a0b0" font-family="monospace" font-size="11">github.com</text><text x="1220" y="348" fill="#00ff88" font-family="monospace" font-size="11">200ms</text>
+  <text x="930" y="366" fill="#a0a0b0" font-family="monospace" font-size="11">vercel.com</text><text x="1220" y="366" fill="#00f0ff" font-family="monospace" font-size="11">150ms</text>
+  <!-- Command center -->
+  <rect x="180" y="446" width="1100" height="274" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <rect x="200" y="462" width="1060" height="44" rx="22" fill="rgba(0,0,0,0.3)" stroke="rgba(0,240,255,0.3)" stroke-width="1"/>
+  <text x="220" y="490" fill="#5a5a6a" font-family="sans-serif" font-size="13">Ask Hanter anything...</text>
+  <!-- Log stream area -->
+  <rect x="200" y="516" width="1060" height="190" rx="8" fill="rgba(0,0,0,0.2)"/>
+  <text x="214" y="538" fill="#5a5a6a" font-family="monospace" font-size="11">[10:42:01] [DevAgent]    → Git push initiated</text>
+  <text x="214" y="556" fill="#5a5a6a" font-family="monospace" font-size="11">[10:42:03] [DevAgent]    → Vercel build started</text>
+  <text x="214" y="574" fill="#00f0ff" font-family="monospace" font-size="11">[10:42:15] [DevAgent]    → Deployed successfully ✅</text>
+  <text x="214" y="592" fill="#f0a000" font-family="monospace" font-size="11">[10:42:16] [SocialAgent] → Drafting announcement...</text>
+</svg>

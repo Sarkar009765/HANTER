@@ -27,7 +27,7 @@ def validate_command(command: str) -> tuple[bool, str]:
 
 def validate_path(path: str, allowed_roots: list[str] | None = None) -> bool:
     if allowed_roots is None:
-        allowed_roots = ["~/BroAIProjects", "~/Downloads", "~/Documents"]
+        allowed_roots = ["~/HANTERProjects", "~/Downloads", "~/Documents"]
     resolved = str(Path(path).resolve())
     for root in allowed_roots:
         root_resolved = str(Path(root).expanduser().resolve())
